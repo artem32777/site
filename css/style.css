@@ -1689,15 +1689,15 @@ body {
   text-align: center;
 }
 
-@supports (padding-bottom: clamp( 1.25rem , -10.75rem  +  24vw , 5rem )) {
+@supports (padding-bottom: clamp( 2.5rem , -5.5rem  +  16vw , 5rem )) {
   .seventh-block__header {
-    padding-bottom: clamp( 1.25rem , -10.75rem  +  24vw , 5rem );
+    padding-bottom: clamp( 2.5rem , -5.5rem  +  16vw , 5rem );
   }
 }
 
-@supports not (padding-bottom: clamp( 1.25rem , -10.75rem  +  24vw , 5rem )) {
+@supports not (padding-bottom: clamp( 2.5rem , -5.5rem  +  16vw , 5rem )) {
   .seventh-block__header {
-    padding-bottom: calc(1.25rem + 3.75 * (100vw - 50rem) / 15.625);
+    padding-bottom: calc(2.5rem + 2.5 * (100vw - 50rem) / 15.625);
   }
 }
 
@@ -2248,6 +2248,10 @@ body {
 
   .fifthblock-content__subtext {
     padding-left: 0;
+  }
+
+  .seventh-block__header {
+    padding-bottom: 1.25rem;
   }
 
   .contactsblock {
